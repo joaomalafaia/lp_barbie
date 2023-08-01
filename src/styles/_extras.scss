@@ -4,6 +4,10 @@
     padding: 5.5vw;
     text-align: center;
 
+    @media (max-width: 768px) {
+        padding-top: 2vw;           
+    }
+
     p {
         margin-bottom: 40px;
         font-weight: 600;
@@ -14,6 +18,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         list-style: none;
+
+        @media (max-width: 768px) {
+            display: block;           
+        }
 
         &__item {
             cursor: pointer;
