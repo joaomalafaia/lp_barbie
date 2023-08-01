@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.extras {
+    padding: 5.5vw;
+    text-align: center;
+
+    p {
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        list-style: none;
+
+        &__item {
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                transition: transform .2s;
+                
+                &:hover {
+                    transform: scale(1.05);                    
+                }
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+        }
+    }
+}

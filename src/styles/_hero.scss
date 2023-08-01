@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.5vw;
+    min-height: 100vh;
+    background-image: url(../../dist/images/barbie_hero_novo.png);
+    background-size: cover;
+    text-align: center;
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+
+        &__buttons {
+            display: block;
+            list-style: none;
+
+            &__button {
+                
+
+                button {
+                    width: 450px;
+                    height: 50px;
+                    font-size: 20px;
+                    color: variaveis.$corTextoBotao;
+                    background-color: variaveis.$corBotao;
+                    text-transform: uppercase;
+                    border: 1px solid variaveis.$corBotao;
+                    border-radius: 25px;
+                    margin-bottom: 2vw;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
